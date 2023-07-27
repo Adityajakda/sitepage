@@ -5,6 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Collection</title>
     <style>
+        
+            /* Navbar styles */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+        .navbar-logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .navbar-menu {
+            display: flex;
+        }
+        .navbar-menu-item {
+            margin-left: 20px;
+        }
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -96,6 +119,19 @@
     </style>
 </head>
 <body>
+      <!-- Navbar -->
+    <div class="navbar">
+        <div class="navbar-logo">WebTitleStore</div>
+        <div class="navbar-menu">
+            <div class="navbar-menu-item"><a href="homepage.html"><button>Home</button></a></div>
+            <div class="navbar-menu-item"><a href="#"><button>Contact</button></a></div>
+            <div class="navbar-menu-item"><a href="scrollereffect.html"><button>Gallery</button></a></div>
+            <div class="navbar-menu-item"><a href="#"><button>About</button></a></div>
+        </div>
+    </div>
+
+    
+    
     <div class="container">
         <div class="row">
             <div class="product-item">
@@ -314,9 +350,9 @@
 
                     // Check if the item is on the left or right side of the row
                     if (itemRect.left < rowRect.left + (rowRect.width / 2)) {
-                        item.style.animation = item.classList.contains('new-product-item') ? 'slideInFromLeft 3.5s ease-in-out' : 'slideInFromLeft 3.5s ease-in-out';
+                        item.style.animation = item.classList.contains('new-product-item') ? 'slideInFromLeft 0.5s ease-in-out' : 'slideInFromLeft 0.5s ease-in-out';
                     } else {
-                        item.style.animation = item.classList.contains('new-product-item') ? 'slideInFromRight 3.5s ease-in-out' : 'slideInFromRight 3.5s ease-in-out';
+                        item.style.animation = item.classList.contains('new-product-item') ? 'slideInFromRight 0.5s ease-in-out' : 'slideInFromRight 0.5s ease-in-out';
                     }
                     
                     item.style.opacity = '1';

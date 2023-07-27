@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Collection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+            /* Navbar styles */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+        .navbar-logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .navbar-menu {
+            display: flex;
+        }
+        .navbar-menu-item {
+            margin-left: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        .row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .product-item {
+            width: calc(50% - 20px);
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 20px;
+            transition: transform 0.2s ease;
+            margin-bottom: 20px;
+            opacity: 0;
+            animation-fill-mode: forwards;
+        }
+        .product-item img {
+            overflow: hidden;
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        .product-name {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .product-item:hover {
+            overflow: hidden;
+            transform: scale(1.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        @keyframes slideInFromLeft {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        @keyframes slideInFromRight {
+            0% {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        .new-product-item {
+            animation: fadeIn 0.5s ease;
+        }
+    </style>
+</head>
+<body>
+    
+       <!-- Navbar -->
+    <div class="navbar">
+        <div class="navbar-logo">WebTitleStore</div>
+        <div class="navbar-menu">
+            <div class="navbar-menu-item"><a href="homepage.html"><button>Home</button></a></div>
+            <div class="navbar-menu-item"><a href="contect.html"><button>Contact</button></a></div>
+            <div class="navbar-menu-item"><a href="scrollereffect.html"><button>Gallery</button></a></div>
+            <div class="navbar-menu-item"><a href="about.html"><button>About</button></a></div>
+        </div>
+    </div>
+    <br>
+    <br>
+    
+    <div class="container">
+        <div class="row">
+            <div class="product-item">
+                <img src="img.jpg" alt="Product 1">
+                <div class="product-name">Product 1</div>
+            </div>
+            <div class="product-item">
+                <img src="img.jpg" alt="Product 2">
+                <div class="product-name">Product 2</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="product-item">
+                <img src="img.jpg" alt="Product 3">
+                <div class="product-name">Product 3</div>
+            </div>
+            <div class="product-item">
+                <img src="img.jpg" alt="Product 4">
+                <div class="product-name">Product 4</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="product-item">
+                <img src="img.jpg" alt="Product 5">
+                <div class="product-name">Product 5</div>
+            </div>
+            <div class="product-item">
+                <img src="img.jpg" alt="Product 6">
+                <div class="product-name">Product 6</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="product-item">
+                <img src="img.jpg" alt="Product 7">
+                <div class="product-name">Product 7</div>
+            </div>
+            <div class="product-item">
+                <img src="img.jpg" alt="Product 8">
+                <div class="product-name">Product 8</div>
+            </div>
+        </div>
+         <div class="row">
+            <div class="product-item">
+                <img src="img.jpg" alt="Product 9">
+                <div class="product-name">Product 9</div>
+            </div>
+            <div class="product-item">
+                <img src="img.jpg" alt="Product 10">
+                <div class="product-name">Product 10</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="product-item">
+                <img src="img.jpg" alt="Product 11">
+                <div class="product-name">Product 11</div>
+            </div>
+            <div class="product-item">
+                <img src="img.jpg" alt="Product 12">
+                <div class="product-name">Product 12</div>
+            </div>
+        </div>
+         <div class="row">
+            <div class="product-item">
+                <img src="img.jpg" alt="Product 13">
+                <div class="product-name">Product 13</div>
+            </div>
+            <div class="product-item">
+                <img src="img.jpg" alt="Product 14">
+                <div class="product-name">Product 14</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="product-item">
+                <img src="img.jpg" alt="Product 15">
+                <div class="product-name">Product 15</div>
+            </div>
+            <div class="product-item">
+                <img src="img.jpg" alt="Product 16">
+                <div class="product-name">Product 16</div>
+            </div>
+        </div>
+         <div class="row">
+            <div class="product-item">
+                <img src="img.jpg" alt="Product 17">
+                <div class="product-name">Product 17</div>
+            </div>
+            <div class="product-item">
+                <img src="img.jpg" alt="Product 18">
+                <div class="product-name">Product 18</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="product-item">
+                <img src="img.jpg" alt="Product 19">
+                <div class="product-name">Product 19</div>
+            </div>
+            <div class="product-item">
+                <img src="img.jpg" alt="Product 20">
+                <div class="product-name">Product 20</div>
+            </div>
+        </div>
+         <div class="row">
+            <div class="product-item">
+                <img src="img.jpg" alt="Product 21">
+                <div class="product-name">Product 21</div>
+            </div>
+            <div class="product-item">
+                <img src="img.jpg" alt="Product 22">
+                <div class="product-name">Product 22</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="product-item">
+                <img src="img.jpg" alt="Product 23">
+                <div class="product-name">Product 23</div>
+            </div>
+            <div class="product-item">
+                <img src="img.jpg" alt="Product 24">
+                <div class="product-name">Product 24</div>
+            </div>
+        </div>
+         <div class="row">
+            <div class="product-item">
+                <img src="img.jpg" alt="Product 25">
+                <div class="product-name">Product 25</div>
+            </div>
+            <div class="product-item">
+                <img src="img.jpg" alt="Product 26">
+                <div class="product-name">Product 26</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="product-item">
+                <img src="img.jpg" alt="Product 27">
+                <div class="product-name">Product 27</div>
+            </div>
+            <div class="product-item">
+                <img src="img.jpg" alt="Product 28">
+                <div class="product-name">Product 28</div>
+            </div>
+        </div>
+          <div class="row">
+            <div class="product-item">
+                <img src="img.jpg" alt="Product 29">
+                <div class="product-name">Product 29</div>
+            </div>
+            <div class="product-item">
+                <img src="img.jpg" alt="Product 30">
+                <div class="product-name">Product 30</div>
+            </div>
+        </div>
+        <!-- Continue adding more rows here with the same structure -->
+    </div>
+
+    <!-- Add smooth scroll animation -->
+    <script>
+        // Function to check if an element is in the viewport
+        function isInViewport(element) {
+            const rect = element.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+
+        // Function to animate product items when they are in the viewport
+        function animateProductItems() {
+            const productItems = document.querySelectorAll('.product-item');
+            productItems.forEach((item) => {
+                if (isInViewport(item)) {
+                    item.style.animation = item.classList.contains('new-product-item') ? 'slideInFromRight 0.5s ease' : 'slideInFromLeft 0.5s ease';
+                    item.style.opacity = '1';
+                }
+            });
+        }
+
+        // Initially, apply animations to product items in the viewport
+        animateProductItems();
+
+        // Listen for scroll events and apply animations when product items come into the viewport
+        window.addEventListener('scroll', () => {
+            animateProductItems();
+        });
+
+        // Smooth scroll to sections
+        function smoothScroll(target) {
+            document.querySelector(target).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+
+        // Example: Smooth scroll to the product collection on button click
+        const scrollToCollectionButton = document.querySelector('#scrollToCollection');
+        scrollToCollectionButton.addEventListener('click', () => {
+            smoothScroll('.container');
+        });
+    </script>
+</body>
+</html>

@@ -128,6 +128,17 @@ img {vertical-align: middle;}
         .navbar-menu-item {
             margin-left: 20px;
         }
+        .nav-button{
+            height: 40px;
+            border-radius: 10px;
+            transition-duration: 0.4s;
+            display: block;
+        }
+
+        .nav-button:hover {
+            background-color:#800760; /* Green */
+            color: white;
+        }
         /* CSS Animation for the heading */
         .heading {
             font-size: 40px;

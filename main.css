@@ -5,7 +5,16 @@
         
         
 * {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0}
+
+body{
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    height: -webkit-fill-available;
+}
+
 .mySlides {display: none}
 img {vertical-align: middle;}
 
@@ -94,51 +103,58 @@ img {vertical-align: middle;}
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
-        
-        
-        
-        
+   /* Navbar styles */
+/* Navbar styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+/*    background-color: #fff;  Set the background color for the navbar */
+    color: #333; /* Set the text color */
+   
+    height: 80px; /* Set the height of the navbar */
+}
+
+.navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo img {
+    height: 50px; /* Adjust the height of the logo image */
+    border-radius: 50%; /* Apply border-radius to the logo image */
+    margin-right: 10px; /* Add spacing between the logo and text */
+}
+
+.navbar-menu {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-menu-item {
+    margin-left: 20px;
+}
+
+.navbar-menu-item a {
+    text-decoration: none;
+    margin-left: 5px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    background-color: #333; /* Set button background color */
+    color: #fff; /* Set button text color */
+    border: none;
+}
+
+.navbar-menu-item a:hover {
+    background-color: #555; /* Change the hover background color for the navbar links */
+}    
         
         /* Reset some default styles */
-        body{
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            height: 100vh;
-            height: -webkit-fill-available;
-        }
 
-        /* Navbar styles */
-        .navbar {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-/*            background-color:#333;*/
-            color: #333;
-            padding: 10px;
-            height: 15%;
-        }
-        .navbar-logo {
-            font-size: 24px;
-            font-weight: bold;
-        }
-        .navbar-menu {
-            display: flex;
-        }
-        .navbar-menu-item {
-            margin-left: 20px;
-        }
-        .nav-button{
-            height: 40px;
-            border-radius: 10px;
-            transition-duration: 0.4s;
-            display: block;
-        }
 
-        .nav-button:hover {
-            background-color:#800760; /* Green */
-            color: white;
-        }
         /* CSS Animation for the heading */
         .heading {
             font-size: 40px;
@@ -208,25 +224,32 @@ img {vertical-align: middle;}
             text-align: center;
             padding: 10px;
         }
+   .icon{
+            position: fixed;
+            bottom: 50px;
+            right: 20px;
+            z-index: 999;
+        }
 
         /* Media Queries for Responsive Design */
-        @media screen and (max-width: 768px) {
-            .navbar {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            .navbar-menu {
-                margin-top: 10px;
-            }
-            .image-slider {
-                animation: slideInUp 10s linear infinite;
-            }
-            @keyframes slideInUp {
-                0% {
-                    transform: translateY(0);
-                }
-                100% {
-                    transform: translateY(-100%);
-                }
-            }
-        }
+     @media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .navbar-menu {
+        margin-top: 20px;
+    }
+
+    .navbar-menu-item {
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+
+    .navbar-menu-item a {
+        display: block;
+        padding: 10px;
+        text-align: center;
+    }
+}

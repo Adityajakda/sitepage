@@ -18,6 +18,20 @@ body{
 .mySlides {display: none}
 img {vertical-align: middle;}
 
+.container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 30px;
+           }
+
+container div p{
+        color: aqua;
+}
+
+.slogan{
+    text-align: center;
+    
+}
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
@@ -229,8 +243,14 @@ img {vertical-align: middle;}
             bottom: 50px;
             right: 20px;
             z-index: 999;
+            margin: 10px;
         }
-
+/*
+.icon i{
+    color: #fff;
+    background-color: #4acd50;
+}
+*/
         /* Media Queries for Responsive Design */
      @media screen and (max-width: 768px) {
     .navbar {

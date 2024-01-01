@@ -3,18 +3,22 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>B R Thewa - contact us</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 /* Contact page content */
 .container {
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 10px auto;
+    padding: 10px;
 }
-
-h1 {
-  text-align: center;
-}
+.container div {
+    width: calc(50% - 20px);
+    padding: 10px;
+    transition: transform 0.2s ease;
+    }
 
 .contact-form {
   display: flex;
@@ -51,11 +55,13 @@ h1 {
     width: 100%;
   }
 }
-    
-    
-    
-    /* Basic styling */
-
+@media screen and (max-width: 600px) {
+  .container div {
+    float: none;
+    width: 100%;
+  }
+}    
+/* Basic styling */
 
 form {
   max-width: 500px;
@@ -106,27 +112,42 @@ form {
     <a href="https://wa.me/918233971370"> <i style="font-size:34px" class="fa">&#xf232;</i></a><br><br>
    <a href="tel:+918233971370"><i style="font-size:34px" class="fa">&#xf095;</i></a>
     </div>
+    
+
 <!-- Contact page content -->
+<div class="conthad">
+    <h1>Contact Us</h1>
+    <p><i>You can call us in working time or visit our office.</i></p>
+</div>
 <div class="container">
-  <h1>Contact Us</h1>
+    
+    <div> 
+        <div>
+            <h3>Address</h3>
+            <p>B R Thewa Art Jewellery</p>
+            <p>Opposite Jain Bording MG Road </p>
+            <p>Pratapgarh, Rajasthan 312605</p>
+        </div>
+        <br>
+        <div>
+            <h3>Hour of Operation</h3>
+            <p><b>Monday-Saturday:</b> 10:00 Am – 9:00 Pm</p>
+            <p><b>Sundays:</b> 10:00 Am – 8:00 Pm</p>
+        </div>
+    </div>
+    <div class="contactlink" >
+        <br>
+        <a href="tel:+918233971370"><i style="font-size:34px; " class="fa">&#xf095;</i><br><br>+91 8233971370</a><br><br><br>
+        <a href="mailto:rinkusoni241@gmail.com"><i style="font-size:34px;" class="fa">&#xf0e0;</i><br><br>rinkusoni241@gmail.com</a>    
+        <br><br><br>
+        <a href="https://www.facebook.com/profile.php?id=100063839571133"><i style="font-size:34px" class="fa">&#xf09a;</i><br><br>B R THEWA ART</a><br><br><br>
+        <a href="https://www.google.com/maps/place/B.R.+Thewa+Art+jewellery/@24.0314477,74.7831886,19.32z/data=!4m6!3m5!1s0x396685e77efa4a01:0xe93001a721e828c4!8m2!3d24.0318604!4d74.7833469!16s%2Fg%2F11h1jhv9mx?entry=ttu" target="_blank"><i style="font-size:34px" class="fa">&#xf041;</i><br><br>B R THEWA ART</a>
+    </div>
 
-
-<form id="contactForm" action="mailto:rinkusoni241@gmail.com" method="post" enctype="text/plain">
-  <label for="name">Name:</label>
-  <input type="text" id="name" name="name" class="input-field"><br><br>
-  
-  <label for="email">Email:</label>
-  <input type="email" id="email" name="email" class="input-field"><br><br>
-  
-  <label for="message">Message:</label><br>
-  <textarea id="message" name="message" rows="4" cols="50" class="input-field"></textarea><br><br>
-  
-  <input type="submit" value="Submit" class="submit-button">
-</form>
-
-<script></script>
 
 </div>
-
+<!-- Footer -->
+<div class="footer">Copyright 2024 &copy;B R Thewa Art Jewellery. All rights reserved.</div>
+ 
 </body>
 </html>

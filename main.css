@@ -24,13 +24,14 @@ img {vertical-align: middle;}
             padding: 30px;
            }
 
-container div p{
-        color: aqua;
-}
+
 
 .slogan{
     text-align: center;
     
+}
+.conthad{
+    text-align: center;
 }
 /* Slideshow container */
 .slideshow-container {
@@ -117,15 +118,12 @@ container div p{
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
-   /* Navbar styles */
 /* Navbar styles */
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-/*    background-color: #fff;  Set the background color for the navbar */
     color: #333; /* Set the text color */
-   
     height: 80px; /* Set the height of the navbar */
 }
 
@@ -229,14 +227,14 @@ container div p{
 
         /* Footer styles */
         .footer {
-            position: fixed;
+/*            position: fixed;*/
             left: 0;
             bottom: 0;
             width: 100%;
-            background-color: #333;
-            color: #fff;
+/*            background-color: #333;*/
+            color: black;
             text-align: center;
-            padding: 10px;
+/*            padding: 10px;*/
         }
    .icon{
             position: fixed;
@@ -245,12 +243,18 @@ container div p{
             z-index: 999;
             margin: 10px;
         }
-/*
-.icon i{
-    color: #fff;
-    background-color: #4acd50;
+.icon a:hover{
+    color: cadetblue;
 }
-*/
+.contactlink a{
+    color: black;
+    text-decoration: none;
+}
+.contactlink a i:hover{
+    transform: scale(1.2);
+    color: darkgray;
+}
+
         /* Media Queries for Responsive Design */
      @media screen and (max-width: 768px) {
     .navbar {
